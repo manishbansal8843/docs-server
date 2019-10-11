@@ -1257,7 +1257,7 @@ CREATE INDEX _on-key-for-index-name_ _rhs-expression_ (__lhs-expression-key__);
 SELECT _projection-list_
 FROM _lhs-expression_
 JOIN _rhs-expression_
-  ON KEY __rhs-expression__.__lhs-expression-key__ FOR _lhs-expression_
+  ON KEY __rhs-expression__.__rhs-expression-key__ FOR _lhs-expression_
 [ WHERE _predicates_ ] ;
 ----
 ====
